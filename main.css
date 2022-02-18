@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: '"product-sans"';
+    src: url('/assets/"product-sans"/Product Sans Regular.ttf');
+}
+
+.curacel_background {
+    background-image: url('/assets/img/curacel-background.png');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+.curacel_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 130px;
+}
+
+.logo {
+    width: 90px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 314px;
+    list-style: none;
+}
+
+.nav_list a {
+    font-size: 14px;
+    color: #252641;
+    font-family: "product-sans";
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.curacel_headline {
+    padding: 60px 130px;
+}
+
+.curacel_headline h1 {
+    font-size: 50px;
+    font-family: "product-sans";
+    color: #031B4E;
+    width: 642px;
+    line-height: 60px;
+    letter-spacing: 0.02em
+}
+
+.curacel_headline p {
+    font-size: 18px;
+    width: 405px;
+    color: #1E1147;
+    font-family: "product-sans";
+    line-height: 27px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.curacel_start {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.curacel_start button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: #1A1AFF;
+    font-family: "product-sans";
+    border: none;
+    background-color: transparent;
+}
+
+.curacel_start button:not(:first-child) {
+    margin-left: 42px;
+}
+
+.curacel_start span {
+    margin-left: 8px;
+}
+
+.curacel_start span i {
+    font-size: 14px;
+}
+
+.curacel_trust p {
+    color: #696984;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    font-family: 'product-sans';
+    font-weight: 600;
+    text-align: center;
+}
+
+.curacel_trust div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px auto;
+    width: 75%;
+}
+
+.curacel_logo {
+    width: 127px !important;
+}
+
+.curacel_logo img {
+    width: 100%;
+}
+
+.curacel_mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 130px;
+}
+
+.curacel_mission_text {
+    width: 450px;
+}
+
+.curacel_mission_text h2 {
+    font-size: 36px;
+    font-family: 'product-sans';
+    color: #031B4E
+}
+
+.curacel_mission_text p {
+    margin-top: 16px;
+    color: #5B6987;
+    font-size: 16px;
+    font-family: 'product-sans';
+}
+
+.highlight {
+    margin-top: 32px;
+    color: #1E1147 !important;
+    font-size: 17px !important;
+    line-height: 24px;
+}
+
+.curacel_growth {
+    margin-top: 60px;
+}
+
+.curacel_growth h2,
+.curacel_reasons h2 {
+    color: #1E1147;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'product-sans';
+}
+
+.curacel_growth p {
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+    font-family: 'product-sans';
+    margin-top: 16px;
+    font-weight: 400;
+}
+
+.curacel_features {
+    display: flex;
+    padding: 80px 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard_image {
+    width: 612px;
+}
+
+.dashboard_image img {
+    width: 100%;
+}
+
+.features {
+    width: 474px;
+}
+
+.features h2,
+.features p {
+    text-align: left;
+}
+
+.features p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'product-sans';
+    color: #525596;
+    letter-spacing: 0.01em;
+}
+
+.features h2 {
+    margin-top: 15px;
+    font-size: 32px;
+    font-family: 'product-sans';
+    line-height: 42px;
+}
+
+.curacel_insurance {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.hints {
+    display: flex;
+    align-items: center;
+}
+
+.hints:not(:first-child) {
+    margin-top: 14px;
+}
+
+.hints p {
+    margin-top: 0 !important;
+    margin-left: 11px;
+    color: #666666;
+    font-size: 16px;
+    text-transform: capitalize !important;
+}
+
+.curacel_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 130px;
+}
+
+.card_detail {
+    width: 365px;
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 67px 16px 35px 16px;
+    position: relative;
+}
+
+.card_detail:not(:first-child) {
+    margin-left: 12px;
+}
+
+.card_detail h3 {
+    font-size: 18px;
+    color: #2F327D;
+    font-family: 'product-sans';
+    text-align: center;
+}
+
+.card_detail p {
+    margin-top: 13px;
+    text-align: center;
+    color: #696984;
+    font-family: 'product-sans';
+    font-size: 14px;
+}
+
+.curacel_users {
+    position: absolute;
+    width: 70px;
+    top: -34px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.curacel_users img {
+    width: 100%;
+}
