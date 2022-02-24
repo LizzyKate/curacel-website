@@ -10,11 +10,11 @@
 }
 
 .curacel_background {
-    background-image: url('/assets/img/curacel-background.png');
+    /* background-image: url('/assets/img/curacel-background.png');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom; */
 
 }
 
@@ -26,7 +26,7 @@
 }
 
 .logo {
-    width: 90px;
+    width: 120px;
 }
 
 .logo img {
@@ -49,63 +49,95 @@
     letter-spacing: 0.02em;
 }
 
+.curacel_button button {
+    width: 131px;
+    background-color: #4040FF;
+    border-radius: 7px;
+    color: white;
+    padding: 12px 14px;
+    font-size: 16px;
+    font-family: 'product-sans';
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 .curacel_headline {
-    padding: 60px 130px;
+    padding: 0px 0 60px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .curacel_headline h1 {
     font-size: 50px;
     font-family: "product-sans";
     color: #031B4E;
-    width: 642px;
+    width: 435px;
     line-height: 60px;
     letter-spacing: 0.02em
 }
 
 .curacel_headline p {
     font-size: 18px;
-    width: 405px;
+    width: 400px;
     color: #1E1147;
     font-family: "product-sans";
     line-height: 27px;
-    margin-top: 15px;
+    margin-top: 30px;
     font-weight: 400;
 }
 
+.curacel_header {
+    width: 640px;
+}
+
+.curacel_header img {
+    width: 100%;
+}
+
 .curacel_start {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     margin-top: 32px;
 }
 
 .curacel_start button {
     display: inline-flex;
     align-items: center;
-    font-size: 16px;
-    color: #1A1AFF;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
     font-family: "product-sans";
     border: none;
-    background-color: transparent;
+    width: 224px;
+    padding: 12px 14px;
+    border-radius: 7px;
+    background-color: #4040FF;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.curacel_start button:not(:first-child) {
-    margin-left: 42px;
-}
 
 .curacel_start span {
     margin-left: 8px;
 }
 
 .curacel_start span i {
-    font-size: 14px;
+    font-size: 18px;
+}
+
+.curacel_trust {
+    margin-top: 50px;
 }
 
 .curacel_trust p {
-    color: #696984;
+    color: #333333;
     font-size: 18px;
     letter-spacing: 0.02em;
     font-family: 'product-sans';
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -118,7 +150,15 @@
 }
 
 .curacel_logo {
-    width: 127px !important;
+    width: 90px !important;
+}
+
+.curacel_logo_two {
+    width: 120px !important;
+}
+
+.curacel_logo_two img {
+    width: 100%;
 }
 
 .curacel_logo img {
@@ -126,14 +166,7 @@
 }
 
 .curacel_mission {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 50px 130px;
-}
-
-.curacel_mission_text {
-    width: 450px;
 }
 
 .curacel_mission_text h2 {
@@ -142,63 +175,145 @@
     color: #031B4E
 }
 
-.curacel_mission_text p {
+.curacel_api {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.curacel_api p {
     margin-top: 16px;
     color: #5B6987;
     font-size: 16px;
     font-family: 'product-sans';
+    width: 500px;
 }
 
-.highlight {
-    margin-top: 32px;
-    color: #1E1147 !important;
-    font-size: 17px !important;
-    line-height: 24px;
-}
-
-.curacel_growth {
-    margin-top: 60px;
-}
-
-.curacel_growth h2,
-.curacel_reasons h2 {
-    color: #1E1147;
-    text-align: center;
-    font-size: 36px;
-    font-family: 'product-sans';
-}
-
-.curacel_growth p {
-    font-size: 16px;
-    color: #666666;
-    text-align: center;
-    font-family: 'product-sans';
-    margin-top: 16px;
-    font-weight: 400;
-}
-
-.curacel_features {
+.curacel_outreach {
     display: flex;
-    padding: 80px 130px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 130px;
+}
+
+.curacel_country {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dashboard_image {
-    width: 612px;
+.curacel_country:not(:first-child) {
+    margin-top: 70px;
 }
 
-.dashboard_image img {
+.curacel_icon {
+    width: 52px;
+}
+
+.curacel_icon img {
     width: 100%;
+}
+
+.curacel_number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.curacel_country div:not(:first-child) {
+    margin-left: 16px;
+}
+
+.figure {
+    font-family: 'product-sans';
+    font-size: 18px;
+    color: #031B4E;
+    font-weight: bold;
+}
+
+.describe {
+    font-family: 'product-sans';
+    font-size: 14px;
+    color: #031B4E;
+
+}
+
+.reach {
+    width: 730px;
+}
+
+.reach img {
+    width: 100%;
+}
+
+.curacel_aim {
+    padding: 60px 130px;
+}
+
+.curacel_aim h2 {
+    font-size: 48px;
+    font-family: 'product-sans';
+    line-height: 62px;
+    color: #1E1147;
+    width: 675px;
+}
+
+.curacel_task {
+    background-color: #F1F3F8;
+    padding: 38px 53px;
+    margin-top: 100px;
+}
+
+.curacel_task_button {
+    display: flex;
+    align-items: center;
+}
+
+.curacel_task_button button:first-child {
+    padding: 12px 14px;
+    background: #7854F7;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    font-family: 'product-sans';
+    width: 119px;
+    border: none;
+    cursor: pointer;
+}
+
+.curacel_task_button button:not(:first-child) {
+    margin-left: 26px;
+    padding: 12px 14px;
+    background: white;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #666666;
+    font-family: 'product-sans';
+    width: 119px;
+    border: none;
+    cursor: pointer;
+}
+
+.curacel_aim h3 {
+    margin-top: 87px;
+    font-family: 'product-sans';
+    color: #1E1147;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+
+.curacel_features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
 }
 
 .features {
     width: 474px;
-}
-
-.features h2,
-.features p {
-    text-align: left;
 }
 
 .features p {
@@ -210,10 +325,11 @@
 }
 
 .features h2 {
-    margin-top: 15px;
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'product-sans';
-    line-height: 42px;
+    line-height: 36px;
+    color: #333333;
+    width: 100%;
 }
 
 .curacel_insurance {
@@ -239,52 +355,119 @@
     text-transform: capitalize !important;
 }
 
-.curacel_cards {
+
+.curacel_testimonial {
+    margin: 60px 130px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #2BC684;
+    padding: 38px 45px;
+}
+
+.testimony {
+    display: flex;
+    align-items: flex-start;
+}
+
+.line {
+    border-left: 1px solid #BDBDD1;
+    height: 60px;
+}
+
+.testimony p {
+    margin-left: 15px;
+    font-size: 24px;
+    font-family: 'product-sans';
+    color: #5F5F7E;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.author {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px 130px;
+    margin-top: 42px;
 }
 
-.card_detail {
-    width: 365px;
-    background: #FFFFFF;
-    border: 1px solid #F4F4F4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 67px 16px 35px 16px;
-    position: relative;
+.profile_pic {
+    width: 80px;
 }
 
-.card_detail:not(:first-child) {
-    margin-left: 12px;
-}
-
-.card_detail h3 {
-    font-size: 18px;
-    color: #2F327D;
-    font-family: 'product-sans';
-    text-align: center;
-}
-
-.card_detail p {
-    margin-top: 13px;
-    text-align: center;
-    color: #696984;
-    font-family: 'product-sans';
-    font-size: 14px;
-}
-
-.curacel_users {
-    position: absolute;
-    width: 70px;
-    top: -34px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.curacel_users img {
+.profile_pic img {
     width: 100%;
+}
+
+.detail {
+    margin-left: 24px;
+}
+
+.name {
+    color: #5F5F7E;
+    font-size: 16px;
+    font-family: 'product-sans';
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.company {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #80819A;
+    font-family: 'product-sans';
+    letter-spacing: 0.02em;
+}
+
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+}
+
+.circle div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.circle div:first-child {
+    background-color: #7854F7;
+}
+
+.circle div:not(:first-child) {
+    background-color: #CFCFCF;
+    margin-left: 7px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.arrow div:first-child {
+    background-color: #F1F3F8;
+}
+
+.arrow div:not(:first-child) {
+    margin-left: 4px;
+    background-color: #4040FF;
+}
+
+.arrow div:not(:first-child) i {
+    color: white;
 }
