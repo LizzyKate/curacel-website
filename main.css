@@ -33,22 +33,6 @@
     width: 100%;
 }
 
-.nav_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 314px;
-    list-style: none;
-}
-
-.nav_list a {
-    font-size: 14px;
-    color: #252641;
-    font-family: "product-sans";
-    text-decoration: none;
-    letter-spacing: 0.02em;
-}
-
 .curacel_button button {
     width: 131px;
     background-color: #4040FF;
@@ -282,7 +266,8 @@
     cursor: pointer;
 }
 
-.curacel_task_button button:not(:first-child) {
+.curacel_task_button button:not(:first-child),
+.curacel_task_mobile_button button {
     margin-left: 26px;
     padding: 12px 14px;
     background: white;
@@ -357,7 +342,11 @@
 
 
 .curacel_testimonial {
-    margin: 6px 130px;
+    padding: 6px 130px;
+
+}
+
+.testimonial_additon {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -450,25 +439,26 @@
     align-items: center;
 }
 
-.arrow div {
+.arrow button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    border: none;
 }
 
-.arrow div:first-child {
+.arrow button:first-child {
     background-color: #F1F3F8;
 }
 
-.arrow div:not(:first-child) {
+.arrow button:not(:first-child) {
     margin-left: 4px;
     background-color: #4040FF;
 }
 
-.arrow div:not(:first-child) i {
+.arrow button:not(:first-child) i {
     color: white;
 }
 
@@ -478,6 +468,10 @@
     background-size: cover;
     background-position: center;
     padding: 50px 130px;
+
+}
+
+.curacel_help {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -658,4 +652,208 @@
 
 .social_icons a:not(:first-child) {
     margin-left: 15px;
+}
+
+.mobile {
+    display: none;
+}
+
+.curacel_task_mobile {
+    display: none;
+}
+
+/* @media screen and (max-width:499px) {
+    .curacel_nav {
+        padding: 30px 30px;
+    }
+
+    .curacel_headline {
+        display: block;
+        padding: 30px 30px;
+        width: 100%;
+    }
+
+    .curacel_headline h1,
+    .curacel_headline p {
+        width: 100%;
+    }
+
+    .curacel_header {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .mobile img {
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 990px) {
+    .curacel_nav {
+        padding: 30px 30px;
+    }
+
+    .curacel_headline {
+        display: block;
+        padding: 30px 30px;
+        width: 100%;
+    }
+
+    .curacel_headline h1,
+    .curacel_headline p {
+        width: 100%;
+    }
+
+    .curacel_header {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .mobile img {
+        width: 100%;
+    }
+
+    .curacel_trust div {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .curacel_mission {
+        padding: 30px 30px;
+    }
+
+    .curacel_api p {
+        width: 45%;
+    }
+
+    .curacel_outreach {
+        display: block;
+        padding: 30px 30px;
+    }
+
+    .curacel_number {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
+
+    .curacel_country {
+        justify-content: flex-start;
+    }
+
+    .curacel_country:not(:first-child) {
+        margin-top: 0;
+    }
+
+    .reach {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .curacel_aim {
+        padding: 30px 30px;
+    }
+
+    .curacel_aim h2 {
+        width: 100%;
+    }
+
+    .curacel_task {
+        display: none;
+    }
+
+    .curacel_task_mobile {
+        background-color: #F1F3F8;
+        padding: 20px 20px;
+        margin-top: 100px;
+        display: block;
+    }
+
+    .curacel_task_mobile:not(:first-child) {
+        margin-top: 50px;
+    }
+
+    .curacel_task_mobile_button button {
+        margin-left: 0;
+    }
+
+
+    .features {
+        width: 100%;
+    }
+
+    .features h2 {
+        margin-top: 32px;
+    }
+
+    .curacel_aim h3 {
+        margin-top: 40px;
+    }
+
+    .curacel_testimonial {
+        margin: 6px 20px;
+        padding: 10px 10px;
+    }
+
+    .curacel_contact {
+        padding: 20px 20px;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .contact_form {
+        width: 100%;
+    }
+
+    .curacel_footer {
+        padding: 20px 20px;
+    }
+
+    .origin {
+        display: block;
+    }
+
+    .footer_history {
+        width: 100%;
+    }
+
+    .origin div {
+        margin-bottom: 16px;
+    }
+
+    /* .curacel_social {
+        display: block;
+    } */
+}
+
+@media only screen and (min-width: 1500px) {
+
+
+    .curacel_background,
+    .curacel_trust,
+    .curacel_mission,
+    .curacel_outreach,
+    .curacel_aim,
+    .curacel_testimonial,
+    .curacel_help,
+    .footer_addition {
+        max-width: 1500px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        /* background-color: #80808026; */
+    }
+
 }
