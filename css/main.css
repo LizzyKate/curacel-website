@@ -342,7 +342,7 @@
 
 
 .curacel_testimonial {
-    padding: 6px 130px;
+    padding: 6px 130px !important;
 
 }
 
@@ -423,14 +423,13 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
+    background-color: #CFCFCF;
+    cursor: pointer;
 }
 
-.circle div:first-child {
-    background-color: #7854F7;
-}
+
 
 .circle div:not(:first-child) {
-    background-color: #CFCFCF;
     margin-left: 7px;
 }
 
@@ -447,6 +446,7 @@
     height: 25px;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
 }
 
 .arrow button:first-child {
@@ -468,6 +468,7 @@
     background-size: cover;
     background-position: center;
     padding: 50px 130px;
+    margin-top: 62px;
 
 }
 
