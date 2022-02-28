@@ -254,7 +254,7 @@
     align-items: center;
 }
 
-.curacel_task_button button:first-child {
+/* .curacel_task_button button:first-child {
     padding: 12px 14px;
     background: #7854F7;
     border-radius: 6px;
@@ -264,9 +264,9 @@
     width: 119px;
     border: none;
     cursor: pointer;
-}
+} */
 
-.curacel_task_button button:not(:first-child),
+.curacel_task_button button,
 .curacel_task_mobile_button button {
     margin-left: 26px;
     padding: 12px 14px;
@@ -804,7 +804,7 @@
 
     .curacel_testimonial {
         margin: 6px 20px;
-        padding: 10px 10px;
+        padding: 10px 10px !important;
     }
 
     .curacel_contact {
@@ -838,6 +838,9 @@
     /* .curacel_social {
         display: block;
     } */
+    .testimony p {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
