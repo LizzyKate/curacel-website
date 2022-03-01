@@ -42,3 +42,4 @@ btnFraud.addEventListener('click', () => {
     btnClaim.style.background = 'white'
     btnClaim.style.color = '#666666'
 })
+
