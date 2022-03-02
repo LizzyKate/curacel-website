@@ -886,8 +886,8 @@
     /* width: 100%;
     height: 500px;
     max-width: 100%; */
-    background: #000033;
-    border-radius: 10px;
+    /* background: #000033; */
+    /* border-radius: 10px; */
 }
 
 @media screen and (max-width: 990px) {

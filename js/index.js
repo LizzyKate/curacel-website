@@ -67,6 +67,9 @@ chart.projection = new am4maps.projections.Orthographic();
 // chart.panBehavior = "rotateLongLat";
 // chart.deltaLatitude = -20;
 chart.padding(20, 20, 20, 20);
+chart.seriesContainer.draggable = false;
+chart.seriesContainer.resizable = false;
+chart.maxZoomLevel = 1;
 
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
@@ -77,22 +80,22 @@ polygonSeries.useGeodata = true;
 
 // Configure series
 var polygonTemplate = polygonSeries.mapPolygons.template;
-polygonTemplate.tooltipText = "{name}";
-polygonTemplate.fill = am4core.color("#FF6633");
+// polygonTemplate.tooltipText = "{name}";
+polygonTemplate.fill = am4core.color("#000033");
 polygonTemplate.stroke = am4core.color("#000033");
 polygonTemplate.strokeWidth = 0.5;
 polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
-polygonTemplate.url = "https://www.datadrum.com/main.php?package={id}";
-polygonTemplate.urlTarget = "_blank";
+// polygonTemplate.url = "https://www.datadrum.com/main.php?package={id}";
+// polygonTemplate.urlTarget = "_blank";
 
 var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
-graticuleSeries.mapLines.template.line.stroke = am4core.color("#ffffff");
+graticuleSeries.mapLines.template.line.stroke = am4core.color("#000033");
 graticuleSeries.mapLines.template.line.strokeOpacity = 0.08;
 graticuleSeries.fitExtent = false;
 
 
 chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
-chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#ffffff");
+chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#000033");
 
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
