@@ -814,10 +814,10 @@ html {
     position: absolute;
     width: 100%;
     display: none;
+    z-index: 50;
 }
 
 .list a {
-    text-align: center;
     font-family: 'product-sans-light';
     color: #1E1147;
     text-decoration: none;

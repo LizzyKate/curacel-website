@@ -55,6 +55,7 @@ btnFraud.addEventListener('click', () => {
 
 const link = document.querySelector('.list')
 const sign = document.querySelector('.sign')
+const curacelBody = document.querySelector('body')
 let clicked = false
 link.style.display = 'none'
 sign.addEventListener('click', () => {
@@ -62,6 +63,12 @@ sign.addEventListener('click', () => {
     if (clicked === true) {
         link.style.display = 'grid'
     } else {
+        link.style.display = 'none'
+    }
+})
+curacelBody.addEventListener('click', (e) => {
+    if (e.target.className !== 'sign') {
+        clicked = false
         link.style.display = 'none'
     }
 })
