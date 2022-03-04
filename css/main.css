@@ -876,28 +876,28 @@ html {
         width: 100%;
     }
 
-    .curacel_trust div {
+    .curacel_logo,
+    .curacel_logo_two {
         width: 100%;
         height: 100%;
         padding-left: 10px;
         padding-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .__adjust {
         display: -ms-grid;
         display: grid;
         grid-template-columns: -ms-grid-colums;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         align-items: center;
         gap: 16px;
-
     }
 
-    .curacel_logo {
-        height: 100% !important;
-        /* width: 180px !important; */
-    }
-
-    .curacel_logo_two {
-        /* width: 230px; */
-    }
 
     /* .curacel_logo img,
     .curacel_logo_two img {
