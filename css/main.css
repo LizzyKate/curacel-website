@@ -822,10 +822,17 @@ html {
     color: #1E1147;
     text-decoration: none;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.list div {
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .list a:not(:first-child) {
-    margin-top: 16px;
+    margin-top: 11px;
 }
 
 @media screen and (max-width: 990px) {
