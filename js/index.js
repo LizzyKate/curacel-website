@@ -53,6 +53,20 @@ btnFraud.addEventListener('click', () => {
     btnDistribution.style.fontFamily = 'product-sans-light'
 })
 
+const link = document.querySelector('.list')
+const sign = document.querySelector('.sign')
+let clicked = false
+link.style.display = 'none'
+sign.addEventListener('click', () => {
+    clicked = !clicked
+    if (clicked === true) {
+        link.style.display = 'grid'
+    } else {
+        link.style.display = 'none'
+    }
+})
+
+
 
 am4core.useTheme(am4themes_animated);
 // Themes end
@@ -70,6 +84,7 @@ chart.padding(20, 20, 20, 20);
 chart.seriesContainer.draggable = false;
 chart.seriesContainer.resizable = false;
 chart.maxZoomLevel = 1;
+// var map = AmCharts.makeChart("maps", { "preventDragOut": true });
 
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());

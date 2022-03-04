@@ -24,6 +24,10 @@
     src: url('/assets/Curacel/ProductSans-Medium.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .curacel_background {
     /* background-image: url('/assets/img/curacel-background.png');
     background-size: cover;
@@ -109,10 +113,7 @@
 .curacel_start button {
     display: inline-flex;
     align-items: center;
-    font-size: 24px;
-    font-weight: 400;
-    color: white;
-    font-family: "product-sans-light";
+
     border: none;
     width: 281px;
     height: 60px;
@@ -121,6 +122,14 @@
     background-color: #4040FF;
     justify-content: center;
     cursor: pointer;
+}
+
+.start_btn a {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    font-family: "product-sans-light";
+    text-decoration: none;
 }
 
 
@@ -264,7 +273,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 130px;
-    margin-top: 54px;
+    margin-top: 80px;
 }
 
 .curacel_country {
@@ -325,6 +334,24 @@
 .reach {
     width: 800px;
     height: 645px;
+    background: #FFFFFF;
+    box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.12);
+    position: relative;
+    border-radius: 10px;
+}
+
+.purple {
+    position: absolute;
+    bottom: -54px;
+    right: -68px;
+    z-index: -50;
+}
+
+.blue {
+    position: absolute;
+    top: -54px;
+    left: -68px;
+    z-index: -50;
 }
 
 .reach img {
@@ -360,6 +387,15 @@
 .curacel_task_button {
     display: flex;
     align-items: center;
+    justify-content: end;
+}
+
+.demo {
+    width: 40%;
+}
+
+.demo img {
+    width: 100%;
 }
 
 /* .curacel_task_button button:first-child {
@@ -408,7 +444,7 @@
 }
 
 .features {
-    width: 474px;
+    width: 50%;
 }
 
 .features p {
@@ -776,121 +812,42 @@
     display: none;
 }
 
-/* @media screen and (max-width:499px) {
-    .curacel_nav {
-        padding: 30px 30px;
-    }
-
-    .curacel_headline {
-        display: block;
-        padding: 30px 30px;
-        width: 100%;
-    }
-
-    .curacel_headline h1,
-    .curacel_headline p {
-        width: 100%;
-    }
-
-    .curacel_header {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-        margin-top: 32px;
-    }
-
-    .mobile img {
-        width: 100%;
-    }
-} */
-/* svg {
-    position: absolute;
-    top: 0;
-    left: -2%;
-    width: 65vw;
-    height: 65vw;
-    transform: scale(1.58);
-}
-
-.globe {
-    --globe-size: 70rem;
-    position: relative;
-    width: var(--globe-size);
-    height: var(--globe-size);
-    background-color: #262c55;
-    margin-top: -6rem;
-    border-radius: 100%;
-    margin-left: auto;
-    transform: translateX(2%);
-    display: none;
-}
-
-.globe__container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: inherit;
-    -webkit-clip-path: inset(0);
-    clip-path: inset(0);
-}
-
-.globe__map.animation {
-    --anim-duration: 12s;
-    -webkit-animation: move-map var(--anim-duration) linear infinite;
-    animation: move-map var(--anim-duration) linear infinite;
-} */
-
-
-
-#earth {
-    width: 300px;
-    height: 300px;
-    background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
-    border-radius: 50%;
-    background-size: 610px;
-    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
-        inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
-    animation-name: rotate;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    -webkit-animation-name: rotate;
-    -webkit-animation-duration: 12s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-}
-
-@keyframes rotate {
-    from {
-        background-position: 0px 0px;
-    }
-
-    to {
-        background-position: 500px 0px;
-    }
-}
-
-@-webkit-keyframes rotate {
-    from {
-        background-position: 0px 0px;
-    }
-
-    to {
-        background-position: 500px 0px;
-    }
-}
 
 #chartdiv {
-    /* width: 100%;
-    height: 500px;
-    max-width: 100%; */
+    width: 100%;
+    height: 100%;
     /* background: #000033; */
     /* border-radius: 10px; */
 }
 
+.list {
+
+    padding: 12px 14px;
+    background: #FFFFFF;
+    box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.12);
+}
+
+.list a {
+    text-align: center;
+    font-family: 'product-sans-light';
+    color: #1E1147;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.list a:not(:first-child) {
+    margin-top: 16px;
+}
+
 @media screen and (max-width: 990px) {
+    .purple {
+        display: none;
+    }
+
+    .blue {
+        display: none;
+    }
+
     .curacel_nav {
         padding: 30px 30px;
     }
@@ -920,17 +877,31 @@
     }
 
     .curacel_trust div {
-        width: 100%;
+        /* width: 100%; */
         height: 100%;
         padding-left: 10px;
         padding-right: 10px;
-        display: flex;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: -ms-grid-colums;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         align-items: center;
+        gap: 16px;
 
     }
 
     .curacel_logo {
         height: 100% !important;
+        width: 180px !important;
+    }
+
+    .curacel_logo_two {
+        width: 230px;
+    }
+
+    .curacel_logo img,
+    .curacel_logo_two img {
+        width: 100%;
     }
 
     .__first {
@@ -984,6 +955,7 @@
         width: 100%;
         height: 100%;
         margin-top: 70px;
+
     }
 
     .curacel_aim {
