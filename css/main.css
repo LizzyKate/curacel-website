@@ -1066,6 +1066,22 @@ html {
         padding: 0 20px;
         margin-top: 32px;
     }
+
+    .contact_input {
+        display: block;
+    }
+
+    .contact_input div {
+        width: 100%;
+    }
+
+    .contact_input div:not(:first-child) {
+        margin-top: 32px;
+    }
+
+    .option>.input {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
