@@ -55,6 +55,10 @@ html {
     height: 100%;
 }
 
+.curacel_button {
+    position: relative;
+}
+
 .curacel_button button {
     width: 103px;
     background-color: #4040FF;
@@ -105,8 +109,6 @@ html {
 }
 
 .curacel_start {
-    /* display: flex;
-    align-items: center; */
     margin-top: 32px;
 }
 
@@ -252,9 +254,6 @@ html {
 }
 
 .curacel_api {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     margin-top: 32px;
 }
 
@@ -397,18 +396,6 @@ html {
 .demo img {
     width: 100%;
 }
-
-/* .curacel_task_button button:first-child {
-    padding: 12px 14px;
-    background: #7854F7;
-    border-radius: 6px;
-    font-size: 14px;
-    color: white;
-    font-family: 'product-sans';
-    width: 119px;
-    border: none;
-    cursor: pointer;
-} */
 
 .curacel_task_button button,
 .curacel_task_mobile_button button {
@@ -821,10 +808,11 @@ html {
 }
 
 .list {
-
     padding: 12px 14px;
     background: #FFFFFF;
     box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    width: 100%;
 }
 
 .list a {
@@ -898,11 +886,6 @@ html {
         gap: 16px;
     }
 
-
-    /* .curacel_logo img,
-    .curacel_logo_two img {
-        width: 100%;
-    } */
 
     .__first {
         margin-top: 25px;
@@ -1099,7 +1082,6 @@ html {
         max-width: 1500px;
         margin-left: auto !important;
         margin-right: auto !important;
-        /* background-color: #80808026; */
     }
 
 }
