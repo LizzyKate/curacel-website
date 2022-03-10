@@ -69,6 +69,7 @@
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
+                this.extra_message.value = this.extra_message.value ?? '';
                 const message_div = document.getElementById('message');
 
                 message_div.innerHTML = `<span class="form_response">Please hold...</span>`;
@@ -569,59 +570,21 @@
             <div class=" glide">
                 <div class="glide__track" data-glide-el="track">
                     <div class="glide__slides">
-<!--                        <div class="testimonial_additon glide__slide">-->
-<!--                            <div class="testimony">-->
-<!--                                <div class="line"></div>-->
-<!--                                <p>"Using Curacel has made it a lot easier to receive, vet, and process claims. It has-->
-<!--                                    also-->
-<!--                                    helped-->
-<!--                                    in-->
-<!--                                    providing transparency between Redcare HMO and our providers."</p>-->
-<!--                            </div>-->
-<!--                            <div class="author">-->
-<!--                                <div class="profile_pic">-->
-<!--                                    <img src="/assets/img/profile.svg" alt="">-->
-<!--                                </div>-->
-<!--                                <div class="detail">-->
-<!--                                    <div class="name">Moses Enenwali</div>-->
-<!--                                    <div class="company">Topship</div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="navigation">-->
-<!--                                <div class="circle glide__bullets" data-glide-el="controls[nav]">-->
-<!--                                    <div class="glide__bullet" data-glide-dir="=0"></div>-->
-<!--                                    <div class="glide__bullet" data-glide-dir="=1"></div>-->
-<!--                                    <div class="glide__bullet" data-glide-dir="=2"></div>-->
-<!--                                    <div class="glide__bullet" data-glide-dir="=3"></div>-->
-
-<!--                                </div>-->
-<!--                                <div class="arrow glide__arrows" data-glide-el="controls">-->
-<!--                                    <button class="glide__arrow glide__arrow&#45;&#45;left" data-glide-dir="<">-->
-<!--                                        <i class="ri-arrow-left-line"></i>-->
-<!--                                    </button>-->
-<!--                                    <button class="glide__arrow glide__arrow&#45;&#45;right" data-glide-dir=">">-->
-<!--                                        <i class="ri-arrow-right-line"></i>-->
-<!--                                    </button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                        <div class="testimonial_additon glide__slide" style="  margin-left: 70px;
-                        margin-right: 70px;">
+                        <div class="testimonial_additon glide__slide">
                             <div class="testimony">
                                 <div class="line"></div>
-                                <p>"Using Curacel has made it a lot easier to receive, vet, and process claims. It has
-                                    also
-                                    helped
-                                    in
-                                    providing transparency between Redcare HMO and our providers."</p>
+                                <p>
+                                    "With Curacel we have made it massively easy for our clients to easily protect their properly on the move.
+                                    Fastest partnership we ever did!!!"
+                                </p>
                             </div>
                             <div class="author">
                                 <div class="profile_pic">
-                                    <img src="/assets/img/slider-2.svg" alt="">
+                                    <img src="/assets/img/profile.svg" alt="">
                                 </div>
                                 <div class="detail">
-                                    <div class="name">Abisola Gafar</div>
-                                    <div class="company">Redcare HMO, Nigeria</div>
+                                    <div class="name">Moses Enenwali</div>
+                                    <div class="company">Topship</div>
                                 </div>
                             </div>
                             <div class="navigation">
@@ -646,19 +609,16 @@
                         margin-right: 70px;">
                             <div class="testimony">
                                 <div class="line"></div>
-                                <p>"Using Curacel has made it a lot easier to receive, vet, and process claims. It has
-                                    also
-                                    helped
-                                    in
-                                    providing transparency between Redcare HMO and our providers. llll"</p>
+                                <p>"“We give our customers peace of mind using Curacel.
+                                    Their customer-first approach and superior tech is aligned with our key values."</p>
                             </div>
                             <div class="author">
                                 <div class="profile_pic">
-                                    <img src="/assets/img/slider-2.svg" alt="">
+                                    <img src="/assets/img/uche_nnadi2.png" style="border-radius: 50%;" alt="">
                                 </div>
                                 <div class="detail">
-                                    <div class="name">Abisola Gafar</div>
-                                    <div class="company">AXA, Nigeria</div>
+                                    <div class="name">Uche Nnadi</div>
+                                    <div class="company">PayHippo</div>
                                 </div>
                             </div>
                             <div class="navigation">
@@ -683,19 +643,54 @@
                         margin-right: 70px;">
                             <div class="testimony">
                                 <div class="line"></div>
-                                <p>"Using Curacel has made it a lot easier to receive, vet, and process claims. It has
-                                    also
-                                    helped
-                                    in
-                                    providing transparency between Redcare HMO and our providers. llll"</p>
+                                <p>
+                                    "Using Curacel has made it a lot easier to receive,
+                                    vet and process claims.
+                                    It has also helped in providing transparency between us and our providers."
+                                </p>
                             </div>
                             <div class="author">
                                 <div class="profile_pic">
-                                    <img src="/assets/img/slider-2.svg" alt="">
+                                    <img src="/assets/img/mariam_mutero.jpg" style="border-radius: 50%;" alt="">
                                 </div>
                                 <div class="detail">
-                                    <div class="name">Abisola Gafar</div>
-                                    <div class="company">UAP OM, Uganda</div>
+                                    <div class="name">Mariam Mutero</div>
+                                    <div class="company">UAP Old Mutual</div>
+                                </div>
+                            </div>
+                            <div class="navigation">
+                                <div class="circle glide__bullets" data-glide-el="controls[nav]">
+                                    <div class="glide__bullet" data-glide-dir="=0"></div>
+                                    <div class="glide__bullet" data-glide-dir="=1"></div>
+                                    <div class="glide__bullet" data-glide-dir="=2"></div>
+                                    <div class="glide__bullet" data-glide-dir="=3"></div>
+
+                                </div>
+                                <div class="arrow glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                        <i class="ri-arrow-left-line"></i>
+                                    </button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_additon glide__slide" style="  margin-left: 70px;
+                        margin-right: 70px;">
+                            <div class="testimony">
+                                <div class="line"></div>
+                                <p>"Our entire Claims Process received a huge boost with Curacel.
+                                    Our backlogs of claims reduced and we are more efficient as a company.
+                                    Best decision we have made so far."</p>
+                            </div>
+                            <div class="author">
+                                <div class="profile_pic">
+                                    <img src="/assets/img/sylvia_havanna.jpg" style="border-radius: 50%;" alt="">
+                                </div>
+                                <div class="detail">
+                                    <div class="name">Sylvia</div>
+                                    <div class="company">Havana Hospitals</div>
                                 </div>
                             </div>
                             <div class="navigation">
@@ -1028,18 +1023,18 @@
                             </div>
                         </div>
                         <div class="contact_input">
-                        <div>
-                            <label for="industry" class="label">Industry</label>
-                            <select id="industry" class="input" name="industry" required>
-                                <option selected value disabled>Select Industry</option>
-                                <option value="banking">Banking</option>
-                                <option value="fintect">Fintech</option>
-                                <option value="insurance">Insurance</option>
-                                <option value="property">Property Management</option>
-<!--                                <option value="proptech">Proptech</option>-->
-<!--                                <option value="utility">Utilities</option>-->
-                            </select>
-                        </div>
+                            <div>
+                                <label for="industry" class="label">Industry</label>
+                                <select id="industry" class="input" name="industry" required>
+                                    <option selected value disabled>Select Industry</option>
+                                    <option value="banking">Banking</option>
+                                    <option value="fintect">Fintech</option>
+                                    <option value="insurance">Insurance</option>
+                                    <option value="property">Property Management</option>
+    <!--                                <option value="proptech">Proptech</option>-->
+    <!--                                <option value="utility">Utilities</option>-->
+                                </select>
+                            </div>
                             <div>
                                 <label for="Info" class="label">Would like to receive updates?</label>
                                 <select id="Info" class="input" name="more_info" required>
@@ -1049,6 +1044,16 @@
                                 </select>
                             </div>
                         </div>
+
+                        <div class="option">
+                            <div>
+                                <label for="Info" class="label">Message(optional)</label>
+                                <textarea name="extra_message" class="input" rows="4" cols="500"></textarea>
+                            </div>
+                        </div>
+
+
+
 
 <!--                        <div class="check">-->
 <!--                            <input type="checkbox" id="term" name="term" value="term">-->
