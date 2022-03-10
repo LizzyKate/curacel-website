@@ -83,6 +83,7 @@
                         setTimeout(function () {
                             message_div.style.display = 'none'
                         }, 5000)
+                        location.reload();
                     }, function(error) {
                         console.log('FAILED...', error);
                         message_div.innerHTML = `<span class="form_response" style="color: red">Error</span>`;
