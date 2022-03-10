@@ -674,9 +674,12 @@ html {
 
 .contact_input:not(:first-child),
 .option,
-.check,
+.check{
+    margin-top: 32px;
+}
 .form_btn {
     margin-top: 32px;
+    text-align: center;
 }
 
 .option {
@@ -833,6 +836,16 @@ html {
 
 .list a:not(:first-child) {
     margin-top: 11px;
+}
+
+.form_response {
+    padding: 20px;
+    background-color: #4040FF;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+
 }
 
 @media screen and (max-width: 990px) {
