@@ -6,22 +6,22 @@
 
 @font-face {
     font-family: "product-sans-regular";
-    src: url('/assets/Curacel/ProductSans-Regular.ttf');
+    src: url('../assets/Curacel/ProductSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'product-sans-bold';
-    src: url('/assets/Curacel/ProductSans-Bold.ttf');
+    src: url('../assets/Curacel/ProductSans-Bold.ttf');
 }
 
 @font-face {
     font-family: 'product-sans-light';
-    src: url('/assets/Curacel/ProductSans-Light.ttf');
+    src: url('../assets/Curacel/ProductSans-Light.ttf');
 }
 
 @font-face {
     font-family: 'product-sans-medium';
-    src: url('/assets/Curacel/ProductSans-Medium.ttf');
+    src: url('../assets/Curacel/ProductSans-Medium.ttf');
 }
 
 html {
@@ -29,7 +29,7 @@ html {
 }
 
 .curacel_background {
-    /* background-image: url('/assets/img/curacel-background.png');
+    /* background-image: url('../assets/img/curacel-background.png');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -598,7 +598,7 @@ html {
 }
 
 .curacel_contact {
-    background-image: url('/assets/img/contact-bg.png');
+    background-image: url('../assets/img/contact-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -715,7 +715,7 @@ html {
 }
 
 .curacel_footer {
-    background-image: url('/assets/img/Footer.png');
+    background-image: url('../assets/img/Footer.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 130px;
